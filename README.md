@@ -2,7 +2,7 @@
 
 This is a collection of practice problems I have completed on the CodePTIT platform.
 
-## Why is this on Github ?
+## Why is this on GitHub ?
 
 - I kinda want to learn GitHub.
 - I want to keep these files online because I might delete the local repository for questionable reasons one day.
