@@ -29,6 +29,14 @@ int main(){
 
         }
 
+        int i = n - 2, j = n - 1;
+
+        while(i >= 0 && arr[i + 1] >= arr[i]) i--;
+        while(arr[j] >= arr[i]) j--;
+        
+        swap(arr[j], arr[i]);
+
+        for(int x : arr) cout << x << " ";
         
         cout << "\n";
 
