@@ -27,7 +27,7 @@ int main(){
 
     for(int i = 0; i < n; i++){
 
-        sum += arr[i] * i - pref;
+        sum += arr[i] * i - pref; 
         pref += arr[i];
 
     }
