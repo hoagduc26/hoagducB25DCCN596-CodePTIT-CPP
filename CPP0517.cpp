@@ -23,6 +23,7 @@ struct NhanVien
 
 void nhap(NhanVien& A){
 
+    scanf("\n");
     getline(cin, A.name);
     getline(cin, A.gender);
     getline(cin, A.birth);
@@ -32,11 +33,24 @@ void nhap(NhanVien& A){
 
 }
 
+string getId(int n){
+
+    string res = to_string(n);
+    while(res.size() < 5){
+
+        res= "0" + res;
+
+    }
+
+    return res;
+
+}
+
 void inds(NhanVien A[], int n){
 
     for(int i = 0;i < n;i++){
 
-        cout << setfill('0') << setw(5) << i + 1 << " ";
+        cout << getId(i + 1) << " ";
         cout << A[i].name << " " << A[i].gender << " " << A[i].birth << " " << A[i].address << " " << A[i].mst << " " << A[i].contractdate; 
         cout << '\n';
 
@@ -48,7 +62,6 @@ int main(){
     struct NhanVien ds[50];
     int N,i;
     cin >> N;
-    cin.ignore();
     for(i = 0; i < N; i++) nhap(ds[i]);
     inds(ds,N);
     return 0;
